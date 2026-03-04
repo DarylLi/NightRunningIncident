@@ -7,8 +7,6 @@
 <p align="center">
   <img alt="ThreeJS version" src="https://img.shields.io/badge/threejs-v182-d5a814" />
   <img alt="Vue version" src="https://img.shields.io/badge/Vanilla%20JS-yellow" />
-  <img alt="GitHub" src="https://github.com/DarylLi/NightRunningIncident" />
-
 </p>
 
 
