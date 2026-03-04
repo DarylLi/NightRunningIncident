@@ -2,12 +2,12 @@
 <img width="1152" height="823" alt="企业微信截图_ec8341dc-5167-4fed-abc2-2962fe9672cb" src="https://github.com/user-attachments/assets/7576db3b-50bd-43bd-935e-3e0329fff694" />
 </p>
 
-<h1 align="center"># NightRunningIncident</h1>
+<h1 align="center">NightRunningIncident</h1>
 
 <p align="center">
   <img alt="ThreeJS version" src="https://img.shields.io/badge/threejs-v182-d5a814" />
   <img alt="Vue version" src="https://img.shields.io/badge/Vanilla%20JS-yellow" />
-  <img alt="GitHub" src="[https://img.shields.io/github/license/honzaap/SlashSaber](https://github.com/DarylLi/NightRunningIncident)" />
+  <img alt="GitHub" src="https://github.com/DarylLi/NightRunningIncident" />
 
 </p>
 
@@ -17,6 +17,9 @@ A horror game👻 made with Three.js
 <img width="1466" height="847" alt="企业微信截图_e45174d4-ca09-4702-b1da-50445221be3d" src="https://github.com/user-attachments/assets/d355d612-b7eb-41ea-b9d8-4036f81be65d" />
 
 <img width="1463" height="846" alt="企业微信截图_06ab54a8-1b51-4f89-89e1-0711514874bb" src="https://github.com/user-attachments/assets/e978c0dd-c59b-416e-be94-33bf18730869" />
+
+https://github.com/user-attachments/assets/4649d5a2-1a3d-442f-82a7-4bb0edf0ff6c
+
 
 ## 素材引用
 
@@ -33,7 +36,7 @@ A horror game👻 made with Three.js
 6. 场景昼夜效果等添加。
 7. 人物、场景素材替换。
 
-https://github.com/user-attachments/assets/4649d5a2-1a3d-442f-82a7-4bb0edf0ff6c
+
 
 
 
