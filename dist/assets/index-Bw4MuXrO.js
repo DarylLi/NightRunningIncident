@@ -52484,7 +52484,7 @@ var sL = class {
     }
     load(e = -30, t = 67.8, n = -220, r = null, i = null) {
       new NI().load(
-        `../npc/fbx/peter.fbx`,
+        `./npc/fbx/peter.fbx`,
         (a) => {
           (a.scale.set(0.01, 0.01, 0.01),
             a.position.set(e, t, n),
