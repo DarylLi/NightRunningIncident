@@ -53183,7 +53183,7 @@ async function mL() {
   c.position.set(-33, 70.8, -228);
   let l = new fN({ antialias: !0, alpha: !0 });
   (l.setSize(window.innerWidth, window.innerHeight),
-    l.setPixelRatio(Math.min(window.devicePixelRatio, 1.5)),
+    l.setPixelRatio(Math.min(window.devicePixelRatio, 0.5)),
     (l.shadowMap.enabled = !0),
     (l.shadowMap.type = 2),
     (l.toneMapping = 4),
