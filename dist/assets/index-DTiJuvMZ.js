@@ -21899,20 +21899,18 @@ var yy = Zl(hy).setParameterLength(1),
             .mul(nb({ N: d, V: f, P: p, mInv: _, p0: s, p1: c, p2: l, p3: u })),
         ),
         i.directDiffuse.addAssign(
-          e
-            .mul(Ou)
-            .mul(
-              nb({
-                N: d,
-                V: f,
-                P: p,
-                mInv: gu(1, 0, 0, 0, 1, 0, 0, 0, 1),
-                p0: s,
-                p1: c,
-                p2: l,
-                p3: u,
-              }),
-            ),
+          e.mul(Ou).mul(
+            nb({
+              N: d,
+              V: f,
+              P: p,
+              mInv: gu(1, 0, 0, 0, 1, 0, 0, 0, 1),
+              p0: s,
+              p1: c,
+              p2: l,
+              p3: u,
+            }),
+          ),
         ),
         this.clearcoat === !0)
       ) {
@@ -22227,11 +22225,28 @@ var yy = Zl(hy).setParameterLength(1),
       let p = W().toVar();
       return (
         p.addAssign(
-          i
-            .element(0)
-            .mul(
+          i.element(0).mul(
+            Yb({
+              theta: 0,
+              axis: f,
+              outputDirection: r,
+              mipInt: s,
+              envMap: c,
+              CUBEUV_TEXEL_WIDTH: l,
+              CUBEUV_TEXEL_HEIGHT: u,
+              CUBEUV_MAX_MIP: d,
+            }),
+          ),
+        ),
+        lv({ start: V(1), end: e }, ({ i: e }) => {
+          z(e.greaterThanEqual(a), () => {
+            dv();
+          });
+          let t = B(o.mul(B(e))).toVar();
+          (p.addAssign(
+            i.element(e).mul(
               Yb({
-                theta: 0,
+                theta: t.mul(-1),
                 axis: f,
                 outputDirection: r,
                 mipInt: s,
@@ -22241,18 +22256,11 @@ var yy = Zl(hy).setParameterLength(1),
                 CUBEUV_MAX_MIP: d,
               }),
             ),
-        ),
-        lv({ start: V(1), end: e }, ({ i: e }) => {
-          z(e.greaterThanEqual(a), () => {
-            dv();
-          });
-          let t = B(o.mul(B(e))).toVar();
-          (p.addAssign(
-            i
-              .element(e)
-              .mul(
+          ),
+            p.addAssign(
+              i.element(e).mul(
                 Yb({
-                  theta: t.mul(-1),
+                  theta: t,
                   axis: f,
                   outputDirection: r,
                   mipInt: s,
@@ -22262,22 +22270,6 @@ var yy = Zl(hy).setParameterLength(1),
                   CUBEUV_MAX_MIP: d,
                 }),
               ),
-          ),
-            p.addAssign(
-              i
-                .element(e)
-                .mul(
-                  Yb({
-                    theta: t,
-                    axis: f,
-                    outputDirection: r,
-                    mipInt: s,
-                    envMap: c,
-                    CUBEUV_TEXEL_WIDTH: l,
-                    CUBEUV_TEXEL_HEIGHT: u,
-                    CUBEUV_MAX_MIP: d,
-                  }),
-                ),
             ));
         }),
         G(p, 1)
@@ -52399,13 +52391,11 @@ async function pL() {
   }
   let ne = new ys(),
     re = ne.load(
-      `/abandoned_warehouse/textures/ConcreteDestroyed_2_baseColor.png`,
+      `abandoned_warehouse/textures/ConcreteDestroyed_2_baseColor.png`,
     ),
-    ie = ne.load(
-      `/abandoned_warehouse/textures/ConcreteDestroyed_2_normal.png`,
-    ),
+    ie = ne.load(`abandoned_warehouse/textures/ConcreteDestroyed_2_normal.png`),
     ae = ne.load(
-      `/abandoned_warehouse/textures/ConcreteDestroyed_2_metallicRoughness.png`,
+      `abandoned_warehouse/textures/ConcreteDestroyed_2_metallicRoughness.png`,
     );
   [re, ie, ae].forEach((e) => {
     ((e.wrapS = i), (e.wrapT = i), e.repeat.set(6, 6));
